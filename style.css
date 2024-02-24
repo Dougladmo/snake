@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0d0a0a; /* Cor de fundo mais suave */
+  font-family: 'Arial', sans-serif;
+}
+
+canvas {
+  border: 3px solid #f8b6d7; /* Cor da borda da tela do jogo */
+}
+
+#score-container {
+  margin-top: 20px; /* Espaço entre o canvas e o score */
+  text-align: center;
+}
+
+#score, #best-score {
+  margin: 5px 0;
+  color: #f1dcec;
+  font-size: 15px;
+}
+
+.game-container {
+  position: relative;
+}
+
+#current-score, #best-score-value {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fa76bd; /* Cor do título */
+}
+
+#game-over-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+#game-over {
+  color: #ffaed9;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+#play-again {
+  font-family: Anta;
+  width: 98px;
+  margin-top: 80px;
+  padding: 10px 10px;
+  font-size: 14px;
+  background-color: #e695c0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ffaed9
+}
+
+#snakeCanvas {
+  position: relative;
+}
+
+#start-game {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  padding: 10px 10px;
+  font-size: 13px;
+  background-color: #f3b5e1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: #8b8789 2px 2px 2px;
+}
+

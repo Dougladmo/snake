@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="styleshee
+</head>
+<body>
+  <div id="score-container">
+    <p id="score">Score: <span id="current-score">0</span></p>
+    <p id="best-score">Best Score: <span id="best-score-value">0</span></p>
+  </div>
+  <audio id="eatSound" src="./sounds/0222.MP3"></audio>
+  <div class="game-container">
+      <div id="game-over-container">
+        <h1 id="gameOverText" ></h1>
+        <button id="play-again" onclick="resetGame()">Play Again</button>
+      </div>
+      <canvas id="snakeCanvas" width="400" height="400"></canvas>
+  </div>
+</div>
+<!-- Adicione o botão de iniciar o jogo -->
+<button id="start-game" onclick="startGame()">Start Game</button>
+ <script src="script.js"></script>
+</body>
+</html>
